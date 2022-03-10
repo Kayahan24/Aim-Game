@@ -1,5 +1,7 @@
 
 var buton = document.getElementById("buton");
+const body = document.querySelector('body');
+const toggle = document.getElementById('toggle');
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -16,4 +18,9 @@ function btnclick()
     buton.style.left=getRandomInt(3,92)+"%";
     buton.style.top=getRandomInt(15,85)+"%";
    
+}
+
+toggle.onclick = function(){
+ toggle.classList.toggle('active');
+ body.classList.toggle('active');
 }
